@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { CreateUser } from "../components/createUser";
+import { CreateUser } from "../components/CreateUser";
 import { Login } from "../components/Login";
 import { Button } from "@/components/ui/button";
 
