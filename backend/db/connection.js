@@ -3,12 +3,15 @@ import dotenv from "dotenv";
 dotenv.config({ path: "./config.env" }); //Step 15
 
 const uri = process.env.ATLAS_URI || "";
+
 const client = new MongoClient(uri, {
   serverApi: {
     version: ServerApiVersion.v1,
     strict: true,
     deprecationErrors: true,
   },
+  ssl: true,
+  tlsAllowInvalidCertificates: false,
 });
 
 try {
