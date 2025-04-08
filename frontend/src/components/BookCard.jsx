@@ -35,13 +35,7 @@ export function BookCard({ book }) {
           </CardDescription>
         </CardHeader>
         <CardContent>
-          {book.image && (
-            <img
-              src={`http://localhost:5050${book.image}`}
-              alt={book.title}
-              className=""
-            />
-          )}
+          {book.path && <img src={book.path} alt={book.title} className="" />}
           <h3>{stringDate.slice(4, 15)}</h3>
         </CardContent>
       </Link>

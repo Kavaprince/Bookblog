@@ -1,7 +1,7 @@
 //Step 4 - Create API. js in front end to define front end routes and manage front end routes whenever accessing data from backend
 import axios from "axios";
 
-const URL = "http://localhost:5050";
+const URL = import.meta.env.VITE_API_BASE_URL;
 
 //Book Posts
 export async function getBooks() {

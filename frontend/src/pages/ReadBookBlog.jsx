@@ -36,12 +36,8 @@ export function ReadBookBlog() {
         {book.description}
       </h2>
       <div className="flex w-full justify-center">
-        {book.image && (
-          <img
-            src={`http://localhost:5050${book.image}`}
-            alt={book.title}
-            className="max-h-96 my-4"
-          />
+        {book.path && (
+          <img src={book.path} alt={book.title} className="max-h-96 my-4" />
         )}
       </div>
       <h3 className="scroll-m-20 text-2xl font-semibold tracking-tight">
